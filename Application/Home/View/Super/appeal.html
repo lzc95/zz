@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <style media="screen">
+      </style>
+   </head>
+   <body>
+      <div id="page">
+         <foreach name='report' item='vo'>
+             帖子名称:<p><{$vo.s_title}></p>
+             举报内容:<p><{$vo.r_content}></p>
+             举报用户:<p><{$vo.u_email}></p>
+             举报时间:<p><{$vo.r_time|date='Y-m-d H:i:s',###}></p>
+         </foreach>
+      </div>
+   </body>
+</html>
